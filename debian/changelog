@@ -1,5 +1,5 @@
-ruby-omniauth-multipassword (0.4.2-1) UNRELEASED; urgency=medium
+ruby-omniauth-multipassword (0.4.2-1) experimental; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #785635)
 
- -- Balasankar C <balasankarc@autistici.org>  Mon, 18 May 2015 21:34:33 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Mon, 18 May 2015 20:59:14 +0530

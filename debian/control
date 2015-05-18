@@ -3,18 +3,29 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-rspec, rake
-Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-omniauth,
+               ruby-rack-test,
+               ruby-rspec (>= 3.0.0)
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-omniauth-multipassword.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-omniauth-multipassword.git;a=summary
 Homepage: https://github.com/jgraichen/omniauth-multipassword
-Testsuite: autopkgtest
+Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-omniauth-multipassword
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
-# omniauth (~> 1.0)
-Description: A OmniAuth strategy to authenticate using different passwort strategies.
- A OmniAuth strategy to authenticate using different passwort strategies.
+Depends: ruby | ruby-interpreter,
+         ruby-omniauth,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: OmniAuth strategy to authenticate using different passwort strategies
+ Provides an OmniAuth strategy that can be used to authenticate using different 
+ passwort strategies. 
+ .
+ OmniAuth is a library that standardizes multi-provider authentication for web 
+ applications
