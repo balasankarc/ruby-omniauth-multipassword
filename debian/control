@@ -1,0 +1,20 @@
+Source: ruby-omniauth-multipassword
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-rspec, rake
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-omniauth-multipassword.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-omniauth-multipassword.git;a=summary
+Homepage: https://github.com/jgraichen/omniauth-multipassword
+Testsuite: autopkgtest
+XS-Ruby-Versions: all
+
+Package: ruby-omniauth-multipassword
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+# omniauth (~> 1.0)
+Description: A OmniAuth strategy to authenticate using different passwort strategies.
+ A OmniAuth strategy to authenticate using different passwort strategies.
