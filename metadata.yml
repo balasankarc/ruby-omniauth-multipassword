@@ -1,0 +1,72 @@
+--- !ruby/object:Gem::Specification
+name: omniauth-multipassword
+version: !ruby/object:Gem::Version
+  version: 0.4.2
+platform: ruby
+authors:
+- Jan Graichen
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2015-05-18 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: omniauth
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+description: A OmniAuth strategy to authenticate using different passwort strategies.
+email:
+- jg@altimos.de
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- ".travis.yml"
+- Gemfile
+- LICENSE
+- README.md
+- Rakefile
+- lib/omniauth-multipassword.rb
+- lib/omniauth/multipassword/base.rb
+- lib/omniauth/multipassword/version.rb
+- lib/omniauth/strategies/multi_password.rb
+- omniauth-multipassword.gemspec
+- spec/omniauth/multipassword/base_spec.rb
+- spec/omniauth/strategy/multi_password_spec.rb
+- spec/spec_helper.rb
+homepage: https://github.com/jgraichen/omniauth-multipassword
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.6
+signing_key: 
+specification_version: 4
+summary: A OmniAuth strategy to authenticate using different passwort strategies.
+test_files: []
