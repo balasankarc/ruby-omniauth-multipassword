@@ -23,9 +23,11 @@ Depends: ruby | ruby-interpreter,
          ruby-omniauth,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: OmniAuth strategy to authenticate using different passwort strategies
+Description: OmniAuth strategy to use different password strategies
  Provides an OmniAuth strategy that can be used to authenticate using different 
- passwort strategies. 
+ password strategies. The compatible strategies include omniauth-internal,
+ which can authenticate using has_secure_password in Rails and 
+ omniauth-kerberos, which can authenticate using a Kerberos server.
  .
  OmniAuth is a library that standardizes multi-provider authentication for web 
  applications
